@@ -3,7 +3,7 @@
  */
 
 'use strict';
-
+var connect = require("connect");
 var _setImmediate2 = require('babel-runtime/core-js/set-immediate');
 
 var _setImmediate3 = _interopRequireDefault(_setImmediate2);
