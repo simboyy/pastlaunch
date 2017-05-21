@@ -46,6 +46,7 @@ if (_environment2.default.seedDB) {
 var app = (0, _express2.default)();
 app.use(_express.static(__dirname + '/client'));
 app.use('/bower_components',  _express.static(__dirname + '/bower_components'));
+app.use(_express.static(__dirname, { index: 'index.html' }));
 var server = _http2.default.createServer(app);
 
 var socketio = require('socket.io')(server, {
